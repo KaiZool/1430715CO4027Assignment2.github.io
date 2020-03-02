@@ -1,0 +1,317 @@
+﻿				/* _________________________
+  				
+					   	   GALLERY CSS
+				____________________________*/
+
+/* _________________________
+      Standard Elements
+____________________________*/
+
+body 
+{
+	background-image:url('../images/parallax-hyperspace-stars11.jpg');	
+	font-family: lucida console, OCR A Extended, Arial, sans-serif;
+	font-size: 18px;
+	overflow: auto;
+}
+
+header 
+{
+	width: 50%;
+	min-height: 125px;
+	padding: 1% 0% 2% 27%;
+	text-align:center;
+}
+
+footer
+{
+	background: #2C3539;
+	width: 100%;
+	overflow: hidden;
+	margin-top: 4%;
+}
+
+h1, h2, h3
+{
+	text-align: center;
+	padding-left: 5%;
+	color: #FFFFFF;
+}
+
+img
+{
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+		
+li
+{
+	display: inline;
+}
+
+p
+{
+	padding: 2%;
+	color: #FFFFFF;
+	font-size: 15px;
+}
+
+nav ul
+{
+	list-style: none;
+	margin: 0;
+	padding-left: 50px;
+}
+
+nav ul li
+{
+	float: left;
+	border: 1px solid #191980;
+	width: 19%;
+}
+		
+nav ul li a
+{
+	background: #F1F0D1;
+	display: block;
+	padding: 5% 12%;
+	font-weight: bold;
+	font-size: 18px;
+	color: #191980;
+	text-decoration:none;
+	text-align: center;
+}
+		
+nav ul li a:hover, nav ul li.active a
+{
+	background-color: #191980;
+	color: #F1F0D1;
+}
+
+/* _________________________
+      Structural Elements
+____________________________*/
+
+#wrapper
+{
+	margin: 0 auto;
+	max-width: 100%;
+	width: 960px;
+	background: #000000;
+	border: 1px solid #191980;
+	border-radius: 2px;
+	box-shadow: 0 0 10px 0px rgba(12, 3, 25, 0.8);
+	opacity: 0.8;
+	filter: alpha(opacity=90);
+
+}
+
+#tag
+{
+	opacity: 0;
+	-webkit-transition: opacity 1.0s linear 0s;
+	transition: opacity 1.0s linear 0s;
+}	
+
+#border
+{
+	border-top: 2px ridge #fff;
+	border-bottom: 2px ridge #fff;
+	padding: 0% 0% 0% 0%;
+	margin: 0% 0% 2% 0%;
+}
+
+#mainheader
+{
+	width: 100%;
+	height: auto;
+	background: #000000;
+	overflow: hidden;
+}
+
+#mainheader p
+{
+	text-align: right;
+	color: #F1F0D1;
+	font-size: 12px;
+	padding: 1% 5%;
+}
+	
+.fsection 
+{
+	width: 40%;
+	float: right;
+	margin: 2% 3%;
+	text-align: center;
+}
+
+.fsection img
+{
+	height: 80px; 
+	width: 80px;
+}
+
+.fsection ul li img:hover 
+{
+	background-color:#C0C0C0;
+	color: #F1F0D1;
+}
+
+.flogo
+{
+	float: left;
+	width: 15%;
+	padding: 2% 0% 2% 4%;
+}
+		
+.copyright
+{
+	background: #191980;
+	width: 100%;
+	overflow: hidden;
+	height: 45px;
+}
+
+.copyright p 
+{
+	color: #FFFFFF;
+	text-align: center;
+	padding: 0px;
+}
+
+/* _________________________
+	Pop Up Elements:
+	[RobinsonProgramming.com]. (2014, Feb 26). How to Make Pop up Text in HTML and CSS [Video]. Retrieved from: https://www.youtube.com/watch?v=N5M_A-HrpU4
+____________________________*/
+
+.hidedisplay
+{
+	position: relative;
+	z-index: 20;
+	color: #000000;
+	text-decoration: none;
+}
+
+.hidedisplay img
+{
+	height: 50px;
+	width: 50px;
+}
+
+.hidedisplay:hover
+{
+	z-index: 30;
+}
+
+.hidedisplay span.showDisplayonhover
+{
+	display: none;
+}
+
+.hidedisplay:hover span.showDisplayonhover
+{
+	display: block;
+	position: absolute;
+	font-size: 18px;
+	line-height: 25px;
+	top: 5px;
+	left: 20px;
+	width: auto;
+	padding: 10px;
+	border: 1px solid #191980;
+	background-color: #000000;
+	color: #FFFFFF;
+	text-align: left;
+}
+
+span.showbodyDisplayonhover
+{
+	font-size: 16px;
+	font-weight: normal;
+	color: Cyan;
+	line-height: 10px;
+}
+	
+/* _________________________
+      	Media Elements
+____________________________*/
+		
+@media screen and (max-width: 478px)
+{
+	body
+	{
+		font-size: 13px;
+	}
+}
+		
+@media screen and (max-width: 740px)
+{
+	nav
+	{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+			
+	nav ul
+	{
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+	}
+			
+	nav ul li
+	{
+		text-align:center;
+		margin-left: auto;
+		width: 100%;
+		border-top: 1px solid #878E63;
+		border-bottom: 1px solid #878E63;
+		border-right: 0px solid #878E63;
+		border-left: 0px solid #878E63;
+	}
+			
+	nav ul li a 
+	{
+		padding: 8px 0;
+		font-size: 16px;
+	}
+										
+	.fsection
+	{
+		float: left;
+		width: 100%;
+		margin: 0;
+	}
+	
+	.flogo
+	{
+		float: left;
+		width: 30%;
+		padding: 2% 0% 2% 30%;
+	}
+	
+	.copyright p
+	{
+		float:left;
+		width: 100%;
+		font-size: 12px;
+	}	
+	
+		.hidedisplay
+	{
+		float: left;
+		position: relative;
+		z-index: 20;
+		width: 50%;
+	}
+}
+
